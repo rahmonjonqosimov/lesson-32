@@ -1,27 +1,24 @@
 .pricing {
-    main{
- 
+  padding-top: 96px;
+  main {
+  }
+}
+// RESPONSIVE////////////////////////////////////////////
+@media (max-width: 976px) {
+  .pricing {
+    main {
     }
- }
- // RESPONSIVE////////////////////////////////////////////
- @media (max-width: 976px) {
-   .pricing {
-     main{
-     
-     }
-   }
- }
- @media (max-width: 768px) {
-   .pricing {
-     main{
-     
-     }
-   }
- }
- @media (max-width: 480px) {
-   .pricing {
-     main{
-     
-     }
-   }
- }
+  }
+}
+@media (max-width: 768px) {
+  .pricing {
+    main {
+    }
+  }
+}
+@media (max-width: 480px) {
+  .pricing {
+    main {
+    }
+  }
+}
