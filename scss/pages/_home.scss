@@ -1,5 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: transparent;
+}
+:root {
+  --White: rgba(255, 255, 255, 1);
+  --Yellow: rgba(252, 217, 128, 1);
+  --Dark-blue: rgba(40, 41, 56, 1);
+  --Grey: rgba(244, 246, 252, 1);
+}
 .home {
+  font-family: Poppins !important;
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #1c1e53;
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 0;
+      transition: all 0.5s linear;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        li {
+          a {
+            color: #bbbbcb;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            transition: all 0.5s linear;
+            &:hover {
+              color: var(--White, #fff);
+            }
+            button {
+              color: var(--White, #fff);
+              font-family: Poppins;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 28px;
+              padding: 16px 48px;
+              border-radius: 41px;
+              border: 2px solid rgba(244, 246, 252, 0.2);
+            }
+          }
+        }
+      }
+      #navbar-responsive.open {
+        left: 0;
+      }
+
+      .menu-btn {
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        display: none;
+        padding: 19.5px 0;
+      }
+      .menu-btn span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #ffffff;
+      }
+      @media (max-width: 850px) {
+        #navbar-responsive {
+          position: fixed;
+          top: 91px;
+          bottom: 0;
+          left: -100%;
+          height: 100vh;
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #1c1e53;
+          transition: 0.5s;
+        }
+
+        .menu-btn {
+          display: flex;
+        }
+      }
+    }
+    .navbar-shrink {
+      padding: 8px 0;
+      .menu-btn {
+        padding: 10px 0;
+      }
+      #navbar-responsive {
+        top: 56px;
+      }
+    }
+  }
   main {
+  }
+  footer {
+    margin-top: 100px;
+    background: #1c1e53;
+    padding-top: 104px;
+    padding-bottom: 92px;
+    .footer-content {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+
+      .left-content {
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 160px;
+        }
+        p {
+          color: var(--White, #fff);
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 28px;
+          margin: 23px 0 86px;
+          max-width: 400px;
+          opacity: 0.8;
+        }
+        .call {
+          background: var(--Yellow, #fcd980);
+          padding: 18px 0 17px 37px;
+          display: flex;
+          gap: 30px;
+          max-width: 517px;
+
+          .card {
+            h3 {
+              color: var(--Dark-blue, #282938);
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 32px;
+            }
+            p {
+              color: var(--Dark-blue, #282938);
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 28px;
+              opacity: 0.8;
+              margin: 0;
+            }
+          }
+        }
+      }
+      .right-content {
+        h1 {
+          color: #fff;
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 64px;
+        }
+        p {
+          color: var(--Grey, #f4f6fc);
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 28px;
+          opacity: 0.8;
+          max-width: 400px;
+          margin-top: 14px;
+        }
+      }
+    }
+  }
+  #backtop {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.2);
+    color: #333;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: -50px;
+    cursor: pointer;
+    z-index: 99;
+    transition: 0.6s;
   }
 }
 // RESPONSIVE////////////////////////////////////////////
