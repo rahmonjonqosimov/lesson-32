@@ -588,6 +588,7 @@ button {
 .pricing main .text {
   position: relative;
   left: 610px;
+  margin-top: 128px;
 }
 .pricing main .text h1 {
   color: var(--Dark-blue, #282938);
@@ -612,6 +613,8 @@ button {
   line-height: 28px; /* 175% */
 }
 .pricing main .box {
+  margin-top: 64px;
+  margin-left: 145px;
   width: 406px;
   height: 745px;
   flex-shrink: 0;
@@ -721,6 +724,50 @@ button {
   font-style: normal;
   font-weight: 600;
   line-height: 32px; /* 177.778% */
+}
+.pricing main .bn {
+  position: relative;
+  left: 430px;
+  top: -844px;
+}
+.pricing main .tas {
+  margin-top: -20px;
+}
+.pricing main .bre {
+  margin-top: -32px;
+}
+.pricing main .text3 {
+  position: relative;
+  top: -1600px;
+  left: 150px;
+}
+.pricing main .text3 h1 {
+  width: 406px;
+  color: var(--Dark-blue, #282938);
+  /* Heading 2 */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 133.333% */
+}
+.pricing main .text3 p {
+  position: relative;
+  top: 16px;
+  right: 490px;
+  color: var(--Royal-Blue, #2405F2);
+  text-align: center;
+  /* Label 01 */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+  opacity: 0.87;
+}
+.pricing main .text5 {
+  width: 843px;
+  height: 162px;
 }
 
 .work {
