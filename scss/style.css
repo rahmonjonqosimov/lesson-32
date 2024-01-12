@@ -574,24 +574,22 @@ button {
 .pricing {
   padding-top: 95.2px;
 }
-* {
+.pricing main * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
-.canteiner {
-  max-width: 1600px;
+.pricing main .canteiner {
+  max-width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
 }
-
-.text {
+.pricing main .text {
   position: relative;
   left: 610px;
 }
-.text h1 {
+.pricing main .text h1 {
   color: var(--Dark-blue, #282938);
   /* Heading 2 */
   font-family: Poppins;
@@ -600,7 +598,7 @@ button {
   font-weight: 600;
   line-height: 64px; /* 133.333% */
 }
-.text p {
+.pricing main .text p {
   position: relative;
   right: 120px;
   width: 562px;
@@ -613,27 +611,33 @@ button {
   font-weight: 500;
   line-height: 28px; /* 175% */
 }
-
-.box {
+.pricing main .box {
   width: 406px;
   height: 745px;
   flex-shrink: 0;
   border-radius: 12px;
   background: var(--Grey, #F4F6FC);
   margin-bottom: 100px;
+  transition: 0.5s;
 }
-.box .tx1 {
+.pricing main .box:hover {
+  background: var(--Tint-blue, #1C1E53);
+  color: #fff !important;
+}
+.pricing main .box:hover .bt-1:hover {
+  background: var(--Yellow, #FCD980);
+}
+.pricing main .box .tx1 {
   display: flex;
   align-items: center;
   padding-top: 64px;
   padding-left: 48px;
   gap: 8px;
 }
-.box .tx1 #p1 {
+.pricing main .box .tx1 #p1 {
   width: 95px;
   height: 56px;
   flex-shrink: 0;
-  color: var(--Dark-blue, #282938);
   /* Heading 3 */
   font-family: Poppins;
   font-size: 38px;
@@ -641,8 +645,7 @@ button {
   font-weight: 600;
   line-height: 56px; /* 147.368% */
 }
-.box .tx1 #p2 {
-  color: var(--Royal-Blue, #2405F2);
+.pricing main .box .tx1 #p2 {
   /* Body 1 */
   font-family: Poppins;
   font-size: 16px;
@@ -650,15 +653,17 @@ button {
   font-weight: 400;
   line-height: 28px; /* 175% */
 }
-.box .tx2 {
+.pricing main .box .tx1 #p2:hover {
+  color: var(--Yellow, #FCD980);
+}
+.pricing main .box .tx2 {
   padding-top: 20px;
   padding-left: 48px;
 }
-.box .tx2 #p3 {
+.pricing main .box .tx2 #p3 {
   width: 180px;
   height: 38px;
   flex-shrink: 0;
-  color: var(--Dark-blue, #282938);
   /* Heading 6 */
   font-family: Poppins;
   font-size: 24px;
@@ -666,15 +671,56 @@ button {
   font-weight: 500;
   line-height: 36px; /* 150% */
 }
-.box .tx2 #p3 {
+.pricing main .box .tx2 #p3 {
   width: 281px;
-  color: var(--Dark-blue, #282938);
   /* Body 2 */
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 28px; /* 175% */
+}
+.pricing main .box .table {
+  display: inline-flex;
+  gap: 12px;
+  margin-top: 78px;
+  margin-left: 48px;
+}
+.pricing main .box .table #p4 {
+  /* Body 1 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.pricing main .box .tab2 {
+  display: flex;
+  margin-top: 22px;
+  margin-left: 48px;
+  gap: 12px;
+}
+.pricing main .box .bt-1 {
+  display: flex;
+  width: 254px;
+  height: 64px;
+  padding: 15px 51px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 41px;
+  background: var(--Dark-blue, #282938);
+  margin-top: 79px;
+  margin-left: 76px;
+}
+.pricing main .box .bt-1 p {
+  color: var(--Grey, #F4F6FC);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 177.778% */
 }
 
 .work {
