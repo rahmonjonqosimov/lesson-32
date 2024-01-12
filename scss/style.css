@@ -202,7 +202,12 @@ header .navbar-shrink #navbar-responsive {
 .about-us {
   padding-top: 95.2px;
 }
+@font-face {
+  font-family: Poppins !important;
+  src: url(../../fonts/Poppins-Regular.ttf) !important;
+}
 .blog {
+  font-family: Poppins !important;
   padding-top: 95.2px;
 }
 .blog main .hero .hero-style {
