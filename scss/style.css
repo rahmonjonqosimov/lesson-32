@@ -202,8 +202,156 @@ header .navbar-shrink #navbar-responsive {
 .about-us {
   padding-top: 95.2px;
 }
+@font-face {
+  font-family: Poppins !important;
+  src: url(../../fonts/Poppins-Regular.ttf) !important;
+}
 .blog {
+  font-family: Poppins !important;
   padding-top: 95.2px;
+}
+.blog main .hero .hero-style {
+  margin-bottom: 128px;
+}
+.blog main .hero .hero-style .hero-text {
+  margin: 0 auto;
+  max-width: 949px;
+  color: #282938;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 16px;
+}
+.blog main .hero .hero-style .hero-par {
+  color: var(--Dark-blue, #282938);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+.blog main .hero .hero-style .hero-img {
+  margin-bottom: 48px;
+  margin: 0 auto;
+}
+.blog main .hero .hero-style .hero-par2 {
+  margin: 0 auto;
+  max-width: 831px;
+  color: #282938;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.blog main .hero .hero-style .hero-par3 {
+  color: #2405f2;
+  opacity: 0.7;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.blog main .our-blog .blog-style .our-blog-text {
+  color: #282938;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 48px;
+}
+.blog main .our-blog .blog-style .blog-cards {
+  margin-bottom: 128px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card {
+  width: 405px;
+  margin-bottom: 64px;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card .blog-img {
+  margin-bottom: 32px;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card .par-day {
+  color: #282938;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card .blog-text {
+  max-width: 404px;
+  color: #282938;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card .blog-par {
+  color: #282938;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card .blog-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card .blog-title .blog-par2 {
+  color: #1c1e53;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+@media (max-width: 1200px) {
+  .blog main .hero-img {
+    width: 900px;
+  }
+}
+@media (max-width: 940px) {
+  .blog main .hero-img {
+    width: 700px;
+    padding-left: 100px;
+  }
+  .blog main .blog-img {
+    width: 370px;
+  }
+}
+@media (max-width: 750px) {
+  .blog main .hero-img {
+    width: 550px;
+    padding-left: 50px;
+  }
+  .blog main .hero-text {
+    font-size: 38px !important;
+  }
+}
+@media (max-width: 580px) {
+  .blog main .blog-img {
+    width: 330px;
+  }
+  .blog main .hero-img {
+    width: 400px;
+    padding: 0;
+  }
+  .blog main .hero-text {
+    font-size: 28px !important;
+  }
+}
+@media (max-width: 460px) {
+  .blog main .hero-img {
+    width: 350px !important;
+  }
+  .blog main .hero-text {
+    font-size: 28px !important;
+  }
 }
 .contact {
   padding-top: 95.2px;
@@ -616,7 +764,7 @@ button {
   margin-top: 64px;
   margin-left: 145px;
   width: 406px;
-  height: 745px;
+  height: 800px;
   flex-shrink: 0;
   border-radius: 12px;
   background: var(--Grey, #F4F6FC);
@@ -728,7 +876,7 @@ button {
 .pricing main .bn {
   position: relative;
   left: 430px;
-  top: -844px;
+  top: -900px;
 }
 .pricing main .tas {
   margin-top: -20px;
@@ -766,10 +914,79 @@ button {
   opacity: 0.87;
 }
 .pricing main .text5 {
+  display: flex;
+  gap: 58px;
   width: 843px;
   height: 162px;
+  background: yellowgreen;
+  position: relative;
+  top: -1750px;
+  left: 700px;
+}
+.pricing main .text5 #lp {
+  color: var(--Royal-Blue, #2405F2);
+  text-align: center;
+  /* Heading 6 */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+}
+.pricing main .text5 #lp1 {
+  color: var(--Dark-blue, #282938);
+  /* Heading 6 */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
 }
 
 .work {
   padding-top: 95.2px;
+}
+.work main .portfolio {
+  background: var(--Grey, #f4f6fc);
+}
+.work main .portfolio-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 0;
+}
+.work main .portfolio-contents p {
+  color: var(--Dark-blue, #282938);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  max-width: 733px;
+}
+.work main .portfolio-contents h1 {
+  color: var(--Dark-blue, #282938);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  padding: 4px 0 24px;
+}
+.work main .portfolio-contents .work-svg {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding-top: 32px;
+}
+.work main .template-contents {
+  display: flex;
+}
+.work main .template-contents .template-items {
+  display: flex;
+  gap: 32px;
+  padding: 96px 0 48px;
 }/*# sourceMappingURL=style.css.map */
