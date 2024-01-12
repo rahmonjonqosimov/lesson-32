@@ -961,16 +961,16 @@ button {
   height: 800px;
   flex-shrink: 0;
   border-radius: 12px;
-  background: var(--Grey, #f4f6fc);
+  background: var(--Grey, #F4F6FC);
   margin-bottom: 100px;
   transition: 0.5s;
 }
 .pricing main .box:hover {
-  background: var(--Tint-blue, #1c1e53);
+  background: var(--Tint-blue, #1C1E53);
   color: #fff !important;
 }
 .pricing main .box:hover .bt-1:hover {
-  background: var(--Yellow, #fcd980);
+  background: var(--Yellow, #FCD980);
 }
 .pricing main .box .tx1 {
   display: flex;
@@ -999,7 +999,7 @@ button {
   line-height: 28px; /* 175% */
 }
 .pricing main .box .tx1 #p2:hover {
-  color: var(--Yellow, #fcd980);
+  color: var(--Yellow, #FCD980);
 }
 .pricing main .box .tx2 {
   padding-top: 20px;
@@ -1060,7 +1060,7 @@ button {
   margin-left: 76px;
 }
 .pricing main .box .bt-1 p {
-  color: var(--Grey, #f4f6fc);
+  color: var(--Grey, #F4F6FC);
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
@@ -1112,7 +1112,6 @@ button {
   gap: 58px;
   width: 843px;
   height: 162px;
-  background: yellowgreen;
   position: relative;
   top: -1750px;
   left: 700px;
@@ -1135,6 +1134,73 @@ button {
   font-style: normal;
   font-weight: 500;
   line-height: 36px; /* 150% */
+  padding-bottom: 16px;
+}
+.pricing main .text5 #ko {
+  width: 624px;
+  height: 62px;
+  flex-shrink: 0;
+  color: var(--Dark-blue, #282938);
+  /* Label 01 */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+}
+.pricing main .text5 #ml {
+  position: relative;
+  top: 150px;
+  width: 843px;
+  height: 1px;
+  background: rgba(194, 187, 255, 0.7);
+}
+.pricing main .text6 {
+  display: flex;
+  gap: 54px;
+  position: relative;
+  top: -1750px;
+  left: 700px;
+  padding-bottom: 32px;
+}
+.pricing main .text6 #l4 {
+  color: var(--Royal-Blue, #2405F2);
+  text-align: center;
+  /* Heading 6 */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+}
+.pricing main .text6 #lh {
+  color: var(--Dark-blue, #282938);
+  /* Heading 6 */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+}
+.pricing main .text6 #xc {
+  position: relative;
+  left: 150px;
+}
+.pricing main .text6 #xm {
+  position: relative;
+  left: 300px;
+}
+.pricing main .text6 #xm1 {
+  position: relative;
+  left: 114px;
+}
+.pricing main .text6 #xm2 {
+  position: relative;
+  left: 153px;
+}
+.pricing .lk {
+  position: relative;
+  top: -150px;
 }
 
 .work {
