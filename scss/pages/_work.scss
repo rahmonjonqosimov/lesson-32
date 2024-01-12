@@ -1,6 +1,53 @@
 .work {
   padding-top: 95.2px;
   main {
+    .portfolio {
+      background: var(--Grey, #f4f6fc);
+      &-contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 96px 0;
+
+        p {
+          color: var(--Dark-blue, #282938);
+          text-align: center;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+          max-width: 733px;
+        }
+        h1 {
+          color: var(--Dark-blue, #282938);
+          text-align: center;
+          font-family: Poppins;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 64px;
+          padding: 4px 0 24px;
+        }
+        .work-svg {
+          display: flex;
+          align-items: center;
+          gap: 28px;
+          padding-top: 32px;
+        }
+      }
+    }
+    .template {
+      &-contents {
+        display: flex;
+        .template-items {
+          display: flex;
+          gap: 32px;
+          padding: 96px 0 48px;
+        }
+      }
+    }
   }
 }
 // RESPONSIVE////////////////////////////////////////////
