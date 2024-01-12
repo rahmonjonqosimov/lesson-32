@@ -1,6 +1,11 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+
 footer {
   background: #1c1e53;
-
+  font-family: Poppins, sans-serif;
   .footer-content {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
