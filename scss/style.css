@@ -207,8 +207,11 @@ header .navbar-shrink #navbar-responsive {
   src: url(../../fonts/Poppins-Regular.ttf) !important;
 }
 .blog {
-  font-family: Poppins !important;
+  font-family: Poppins, sans-serif !important;
   padding-top: 95.2px;
+}
+.blog main {
+  padding-top: 100px;
 }
 .blog main .hero .hero-style {
   margin-bottom: 128px;
@@ -258,7 +261,7 @@ header .navbar-shrink #navbar-responsive {
   color: #282938;
   text-align: center;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 64px;
   margin-bottom: 48px;
 }
@@ -935,16 +938,16 @@ button {
   height: 745px;
   flex-shrink: 0;
   border-radius: 12px;
-  background: var(--Grey, #F4F6FC);
+  background: var(--Grey, #f4f6fc);
   margin-bottom: 100px;
   transition: 0.5s;
 }
 .pricing main .box:hover {
-  background: var(--Tint-blue, #1C1E53);
+  background: var(--Tint-blue, #1c1e53);
   color: #fff !important;
 }
 .pricing main .box:hover .bt-1:hover {
-  background: var(--Yellow, #FCD980);
+  background: var(--Yellow, #fcd980);
 }
 .pricing main .box .tx1 {
   display: flex;
@@ -973,7 +976,7 @@ button {
   line-height: 28px; /* 175% */
 }
 .pricing main .box .tx1 #p2:hover {
-  color: var(--Yellow, #FCD980);
+  color: var(--Yellow, #fcd980);
 }
 .pricing main .box .tx2 {
   padding-top: 20px;
@@ -1034,7 +1037,7 @@ button {
   margin-left: 76px;
 }
 .pricing main .box .bt-1 p {
-  color: var(--Grey, #F4F6FC);
+  color: var(--Grey, #f4f6fc);
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;

@@ -4,9 +4,10 @@
 }
 
 .blog {
-  font-family: Poppins !important;
+  font-family: Poppins, sans-serif !important;
   padding-top: 95.2px;
   main {
+    padding-top: 100px;
     .hero {
       .hero-style {
         margin-bottom: 128px;
@@ -59,7 +60,7 @@
           color: #282938;
           text-align: center;
           font-size: 48px;
-          font-weight: 600;
+          font-weight: 700;
           line-height: 64px;
           margin-bottom: 48px;
         }
