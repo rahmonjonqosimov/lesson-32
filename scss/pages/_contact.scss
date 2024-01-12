@@ -1,8 +1,143 @@
-.contact {
+@font-face {
+  font-family: Poppins;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+
+:root {
+  --White: rgba(255, 255, 255, 1);
+  --Yellow: rgba(252, 217, 128, 1);
+  --Dark-blue: rgba(40, 41, 56, 1);
+  --Grey: rgba(244, 246, 252, 1);
+}
+
+//////////////////////////////////////////
+
+.contact { 
   padding-top: 95.2px;
   main {
+    .main {
+      .container {
+        .nav-link {
+          h2 {
+            color: var(--Dark-blue, #282938);
+            text-align: center;
+          
+            /* Heading 2 */
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 64px;
+            margin-top: 128px;
+            /* 133.333% */
+          }
+          .p {
+            width: 562px;
+            margin-top: 16px;
+            margin-left: 350px;
+            margin-bottom: 64px;
+            color: var(--Dark-blue, #282938);
+            display: flex;
+            text-align: center;
+            justify-content: center;   
+            align-items: center;       
+            /* Body 1 */
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            /* 175% */
+          }
+        }
+      }
+    }
+        .nav-link1 {
+          width: 1061px;
+          height: 640px;
+          flex-shrink: 0;
+          border-radius: 12px;
+          background: var(--Grey, #F4F6FC);
+          margin-left: 250px;
+          margin-bottom: 128px;
+          .forms {
+            width: 1061px;
+            background-color: #F4F6FC;
+            text-align: center;
+            width: 1054px;
+            height: 436px;
+            margin-top: 63px;
+            .form-field {
+              display: flex;
+              form 
+              input {
+                width: 100%;
+                width: 438px;
+                margin-left: 60px;
+                margin-top: 20px;
+                margin-bottom: 54px;
+                display: inline-flex;
+                padding: 18px 32px;
+                align-items: flex-start;
+                gap: 10px;
+                border-radius: 8px;
+                outline: none;
+                border: 1px solid rgba(0, 0, 0, 0.12);
+              }
+              .input1 {
+                margin-top: 93px;
+                margin-bottom: 62px;
+              } 
+            }
+            .form 
+            .message {
+                width: 100%;
+                  width: 908px;
+                  outline: none;
+                  resize: none;
+                  margin-top: 10px;
+                  padding: 10px 0px 20px 20px;
+                  color: var(--Gray-3, #828282);
+                  font-family: Montserrat;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 24px;
+                  letter-spacing: 0.14px;
+            }
+          } 
+
+          .button {
+            border-radius: 41px;
+            margin-top: 80px;
+            margin-left: 75px;
+            background: var(--Dark-blue, #282938);
+            display: flex;
+            width: 254px;
+            height: 64px;
+            padding: 15px 51px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            color: var(--Grey, #F4F6FC);
+              font-family: Manrope;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 32px;
+              &:hover {
+                background-color: #fff;
+                color: #282938;
+                border: 2px solid #282938;
+                transition: all .5s linear;
+              }
+          }
+    }
   }
 }
+
+///////////////////////////////////
 // RESPONSIVE////////////////////////////////////////////
 @media (max-width: 976px) {
   .contact {
@@ -16,9 +151,10 @@
     }
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 480px)and (min-width: 320px) {
   .contact {
     main {
     }
   }
 }
+
