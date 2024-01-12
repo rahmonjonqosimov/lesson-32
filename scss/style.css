@@ -205,6 +205,149 @@ header .navbar-shrink #navbar-responsive {
 .blog {
   padding-top: 95.2px;
 }
+.blog main .hero .hero-style {
+  margin-bottom: 128px;
+}
+.blog main .hero .hero-style .hero-text {
+  margin: 0 auto;
+  max-width: 949px;
+  color: #282938;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 16px;
+}
+.blog main .hero .hero-style .hero-par {
+  color: var(--Dark-blue, #282938);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+.blog main .hero .hero-style .hero-img {
+  margin-bottom: 48px;
+  margin: 0 auto;
+}
+.blog main .hero .hero-style .hero-par2 {
+  margin: 0 auto;
+  max-width: 831px;
+  color: #282938;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.blog main .hero .hero-style .hero-par3 {
+  color: #2405f2;
+  opacity: 0.7;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.blog main .our-blog .blog-style .our-blog-text {
+  color: #282938;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 48px;
+}
+.blog main .our-blog .blog-style .blog-cards {
+  margin-bottom: 128px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card {
+  width: 405px;
+  margin-bottom: 64px;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card .blog-img {
+  margin-bottom: 32px;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card .par-day {
+  color: #282938;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card .blog-text {
+  max-width: 404px;
+  color: #282938;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card .blog-par {
+  color: #282938;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card .blog-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.blog main .our-blog .blog-style .blog-cards .blog-card .blog-title .blog-par2 {
+  color: #1c1e53;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+@media (max-width: 1200px) {
+  .blog main .hero-img {
+    width: 900px;
+  }
+}
+@media (max-width: 940px) {
+  .blog main .hero-img {
+    width: 700px;
+    padding-left: 100px;
+  }
+  .blog main .blog-img {
+    width: 370px;
+  }
+}
+@media (max-width: 750px) {
+  .blog main .hero-img {
+    width: 550px;
+    padding-left: 50px;
+  }
+  .blog main .hero-text {
+    font-size: 38px !important;
+  }
+}
+@media (max-width: 580px) {
+  .blog main .blog-img {
+    width: 330px;
+  }
+  .blog main .hero-img {
+    width: 400px;
+    padding: 0;
+  }
+  .blog main .hero-text {
+    font-size: 28px !important;
+  }
+}
+@media (max-width: 460px) {
+  .blog main .hero-img {
+    width: 350px !important;
+  }
+  .blog main .hero-text {
+    font-size: 28px !important;
+  }
+}
 .contact {
   padding-top: 95.2px;
 }
@@ -347,11 +490,7 @@ button {
   justify-content: flex-end;
   max-width: 400px;
   height: 600px;
-  background: linear-gradient(
-    329deg,
-    #1c1e53 -10.96%,
-    rgba(28, 30, 83, 0.42) 103.96%
-  );
+  background: linear-gradient(329deg, #1c1e53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
 }
 .home main #project .project-content .bottom .left .left-content h2 {
   color: var(--White, #fff);
@@ -395,11 +534,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: linear-gradient(
-    329deg,
-    #1c1e53 -10.96%,
-    rgba(28, 30, 83, 0.42) 103.96%
-  );
+  background: linear-gradient(329deg, #1c1e53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
   height: 284px;
   max-width: 410px;
   width: 100%;
@@ -624,16 +759,16 @@ button {
   height: 745px;
   flex-shrink: 0;
   border-radius: 12px;
-  background: var(--Grey, #f4f6fc);
+  background: var(--Grey, #F4F6FC);
   margin-bottom: 100px;
   transition: 0.5s;
 }
 .pricing main .box:hover {
-  background: var(--Tint-blue, #1c1e53);
+  background: var(--Tint-blue, #1C1E53);
   color: #fff !important;
 }
 .pricing main .box:hover .bt-1:hover {
-  background: var(--Yellow, #fcd980);
+  background: var(--Yellow, #FCD980);
 }
 .pricing main .box .tx1 {
   display: flex;
@@ -662,7 +797,7 @@ button {
   line-height: 28px; /* 175% */
 }
 .pricing main .box .tx1 #p2:hover {
-  color: var(--Yellow, #fcd980);
+  color: var(--Yellow, #FCD980);
 }
 .pricing main .box .tx2 {
   padding-top: 20px;
@@ -723,7 +858,7 @@ button {
   margin-left: 76px;
 }
 .pricing main .box .bt-1 p {
-  color: var(--Grey, #f4f6fc);
+  color: var(--Grey, #F4F6FC);
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
@@ -777,5 +912,4 @@ button {
   display: flex;
   gap: 32px;
   padding: 96px 0 48px;
-  background: crimson;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
