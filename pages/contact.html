@@ -6,10 +6,10 @@
     <title>Contact</title>
     <link rel="stylesheet" href="../scss/style.css" />
     <link
-    rel="icon"
-    type="image/png"
-    href="https://static.figma.com/app/icon/1/favicon.png"
-  />
+      rel="icon"
+      type="image/png"
+      href="https://static.figma.com/app/icon/1/favicon.png"
+    />
   </head>
   <body class="contact">
     <header>
@@ -49,46 +49,79 @@
       </div>
     </header>
     <main>
-      <section class="main" >
+      <section class="main">
         <div class="container">
           <div class="nav-link">
             <h2>Contact Us</h2>
-            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <p class="p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
           </div>
         </div>
       </section>
       <section>
-        <div class="nav-link1">
-          <div class="forms">
-            <div class="form-field">
-              <form>
-                <label for="name"></label>
-                <input class="input1" type="text" placeholder="Name">
-              </form>
-              <form>
-                <label for="email"></label>
-                <input class="input1" type="email" id="email" name="email" placeholder="Email">
-              </form>
+        <div class="container n50">
+          <div class="nav-link1">
+            <form>
+              <div>
+                <div class="input">
+                  <label for="name">Name</label>
+                  <input
+                    class="input1"
+                    required
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="input">
+                  <label for="name">Subject</label>
+                  <input
+                    class="input1"
+                    required
+                    type="text"
+                    id="name"
+                    placeholder="Provide context"
+                  />
+                </div>
+              </div>
+              <div>
+                <div class="input">
+                  <label for="name">Email</label>
+                  <input
+                    class="input1"
+                    required
+                    type="email"
+                    id="name"
+                    placeholder="Enter your Emial"
+                  />
+                </div>
+                <div class="input">
+                  <label for="name">Subject</label>
+                  <input
+                    class="input1"
+                    required
+                    type="text"
+                    id="name"
+                    placeholder="Select Subject"
+                  />
+                </div>
+              </div>
+              <button class="button">Send Messege</button>
+            </form>
+            <div>
+              <div class="comment">
+                <label for="comment">Comment</label>
+                <input
+                  type="textarea"
+                  required
+                  placeholder="Write your  question here"
+                />
+              </div>
             </div>
-            <div class="form-field">
-              <form>
-                <label for="Subject"></label>
-                <input type="text" placeholder="Provide context">
-              </form>
-              <form>
-                <label for="Subject"></label>
-                <input type="email" id="email" name="Select Subject" placeholder="Select Subject">
-              </form>
-            </div>
-            <div class="form">
-              <form>
-                <textarea class="message" name="Message" id="message" cols="30" rows="5" placeholder="Write your  question here"></textarea>
-              </form> 
-            </div>
-            
-            </div>
-            <button class="button">Send Messege</button>
           </div>
+        </div>
       </section>
     </main>
     <footer>
