@@ -18,6 +18,9 @@
     .main {
       .container {
         .nav-link {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           h2 {
             color: var(--Dark-blue, #282938);
             text-align: center;
@@ -32,16 +35,13 @@
             /* 133.333% */
           }
           .p {
-            width: 562px;
+            max-width: 562px;
             margin-top: 16px;
-            margin-left: 350px;
+
             margin-bottom: 64px;
             color: var(--Dark-blue, #282938);
-            display: flex;
             text-align: center;
-            justify-content: center;
-            align-items: center;
-            /* Body 1 */
+
             font-family: Poppins;
             font-size: 16px;
             font-style: normal;
@@ -75,6 +75,7 @@
           font-style: normal;
           font-weight: 600;
           line-height: 32px;
+          margin-bottom: 12px;
         }
 
         input {
@@ -126,6 +127,8 @@
         }
       }
       .comment {
+        display: flex;
+        flex-direction: column;
         label {
           color: #000;
           font-family: Poppins;
@@ -144,6 +147,7 @@
           width: 100%;
           margin-bottom: 130px;
           font-size: 18px;
+          margin-top: 12px;
         }
         ::placeholder {
           color: #000;
@@ -156,45 +160,6 @@
           line-height: 28px; /* 175% */
         }
       }
-
-      // .forms {
-      //   text-align: center;
-      //   width: 1054px;
-      //   height: 436px;
-      //   margin-top: 63px;
-      //   .form-field {
-      //     display: flex;
-      //     form input {
-      //       width: 100%;
-      //       width: 438px;
-      //       margin-left: 60px;
-      //       margin-top: 20px;
-      //       margin-bottom: 54px;
-      //       display: inline-flex;
-      //       padding: 18px 32px;
-      //       align-items: flex-start;
-      //       gap: 10px;
-      //       border-radius: 8px;
-      //       outline: none;
-      //       border: 1px solid rgba(0, 0, 0, 0.12);
-      //     }
-      //   }
-      //   .form .message {
-      //     width: 100%;
-      //     width: 908px;
-      //     outline: none;
-      //     resize: none;
-      //     margin-top: 10px;
-      //     padding: 10px 0px 20px 20px;
-      //     color: var(--Gray-3, #828282);
-      //     font-family: Montserrat;
-      //     font-size: 14px;
-      //     font-style: normal;
-      //     font-weight: 400;
-      //     line-height: 24px;
-      //     letter-spacing: 0.14px;
-      //   }
-      // }
     }
     .n50 {
       display: flex;
@@ -202,6 +167,7 @@
     }
     margin-bottom: 120px;
   }
+
   #backtop {
     text-decoration: none;
     font-size: 24px;
@@ -222,25 +188,58 @@
     z-index: 99;
     transition: 0.6s;
   }
+  @media (max-width: 1100px) {
+    main .nav-link1 form {
+      grid-template-columns: 1fr;
+      place-items: center;
+      gap: 0px;
+      padding: 30px !important;
+      button {
+        width: 180px !important;
+        padding: 0 !important;
+        height: 50px !important;
+      }
+    }
+    .input {
+      display: flex;
+      flex-direction: column;
+    }
+    main .nav-link1 {
+      padding: 30px;
+    }
+  }
+  @media (max-width: 630px) {
+    input {
+      width: 300px !important;
+    }
+    .nav-link1 {
+      .comment {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  @media (max-width: 470px) {
+    h2 {
+      font-size: 32px !important;
+      margin-top: 60px !important;
+    }
+    p {
+      font-size: 12px !important;
+    }
+    label {
+      font-size: 16px !important;
+    }
+    input {
+      width: 250px !important;
+    }
+    ::placeholder {
+      font-size: 12px !important;
+    }
+    .nav-link1 {
+      padding: 0px !important;
+    }
+  }
 }
 
 ///////////////////////////////////
-// RESPONSIVE////////////////////////////////////////////
-@media (max-width: 976px) {
-  .contact {
-    main {
-    }
-  }
-}
-@media (max-width: 768px) {
-  .contact {
-    main {
-    }
-  }
-}
-@media (max-width: 480px) and (min-width: 320px) {
-  .contact {
-    main {
-    }
-  }
-}

@@ -393,6 +393,11 @@ header .navbar-shrink #navbar-responsive {
 .contact main {
   margin-bottom: 120px;
 }
+.contact main .main .container .nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .contact main .main .container .nav-link h2 {
   color: var(--Dark-blue, #282938);
   text-align: center;
@@ -406,16 +411,11 @@ header .navbar-shrink #navbar-responsive {
   /* 133.333% */
 }
 .contact main .main .container .nav-link .p {
-  width: 562px;
+  max-width: 562px;
   margin-top: 16px;
-  margin-left: 350px;
   margin-bottom: 64px;
   color: var(--Dark-blue, #282938);
-  display: flex;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  /* Body 1 */
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -446,6 +446,7 @@ header .navbar-shrink #navbar-responsive {
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+  margin-bottom: 12px;
 }
 .contact main .nav-link1 form input {
   padding: 18px 32px;
@@ -502,6 +503,10 @@ header .navbar-shrink #navbar-responsive {
   border: 2px solid #282938;
   transition: all 0.5s linear;
 }
+.contact main .nav-link1 .comment {
+  display: flex;
+  flex-direction: column;
+}
 .contact main .nav-link1 .comment label {
   color: #000;
   font-family: Poppins;
@@ -520,6 +525,7 @@ header .navbar-shrink #navbar-responsive {
   width: 100%;
   margin-bottom: 130px;
   font-size: 18px;
+  margin-top: 12px;
 }
 .contact main .nav-link1 .comment ::-moz-placeholder {
   color: #000;
@@ -562,6 +568,59 @@ header .navbar-shrink #navbar-responsive {
   cursor: pointer;
   z-index: 99;
   transition: 0.6s;
+}
+@media (max-width: 1100px) {
+  .contact main .nav-link1 form {
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 0px;
+    padding: 30px !important;
+  }
+  .contact main .nav-link1 form button {
+    width: 180px !important;
+    padding: 0 !important;
+    height: 50px !important;
+  }
+  .contact .input {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact main .nav-link1 {
+    padding: 30px;
+  }
+}
+@media (max-width: 630px) {
+  .contact input {
+    width: 300px !important;
+  }
+  .contact .nav-link1 .comment {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 470px) {
+  .contact h2 {
+    font-size: 32px !important;
+    margin-top: 60px !important;
+  }
+  .contact p {
+    font-size: 12px !important;
+  }
+  .contact label {
+    font-size: 16px !important;
+  }
+  .contact input {
+    width: 250px !important;
+  }
+  .contact ::-moz-placeholder {
+    font-size: 12px !important;
+  }
+  .contact ::placeholder {
+    font-size: 12px !important;
+  }
+  .contact .nav-link1 {
+    padding: 0px !important;
+  }
 }
 
 * {
