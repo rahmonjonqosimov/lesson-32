@@ -916,38 +916,43 @@ button {
   transition: 0.6s;
 }
 
-.pricing {
-  padding-top: 95.2px;
-}
-.pricing main * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
-.pricing main .canteiner {
-  max-width: 1200px;
-  padding: 0 20px;
+
+.pricing {
+  padding-top: 95.2px;
+}
+.pricing main {
+  font-family: Poppins, sans-serif !important;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+.pricing main .conatiner {
+  max-width: 1320px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .pricing main .text {
-  position: relative;
-  left: 610px;
   margin-top: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .pricing main .text h1 {
   color: var(--Dark-blue, #282938);
-  /* Heading 2 */
   font-family: Poppins;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
-  line-height: 64px; /* 133.333% */
+  line-height: 64px;
 }
 .pricing main .text p {
-  position: relative;
-  right: 120px;
-  width: 562px;
+  max-width: 562px;
   color: var(--Dark-blue, #282938);
   text-align: center;
   /* Body 2 */
@@ -958,22 +963,30 @@ button {
   line-height: 28px; /* 175% */
 }
 .pricing main .box {
-  margin-top: 64px;
-  margin-left: 145px;
   width: 406px;
   height: 800px;
   flex-shrink: 0;
   border-radius: 12px;
-  background: var(--Grey, #F4F6FC);
+  background: var(--Grey, #f4f6fc);
   margin-bottom: 100px;
   transition: 0.5s;
 }
 .pricing main .box:hover {
-  background: var(--Tint-blue, #1C1E53);
+  background: var(--Tint-blue, #1c1e53);
   color: #fff !important;
 }
-.pricing main .box:hover .bt-1:hover {
-  background: var(--Yellow, #FCD980);
+.pricing main .box:hover .bt-1 {
+  background: var(--Yellow, #fcd980);
+}
+.pricing main .box:hover .bt-1 p {
+  color: #282938 !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.pricing main .box:hover .tx1 #p2 {
+  color: #fcd980 !important;
 }
 .pricing main .box .tx1 {
   display: flex;
@@ -1002,7 +1015,7 @@ button {
   line-height: 28px; /* 175% */
 }
 .pricing main .box .tx1 #p2:hover {
-  color: var(--Yellow, #FCD980);
+  color: var(--Yellow, #fcd980);
 }
 .pricing main .box .tx2 {
   padding-top: 20px;
@@ -1063,17 +1076,18 @@ button {
   margin-left: 76px;
 }
 .pricing main .box .bt-1 p {
-  color: var(--Grey, #F4F6FC);
+  color: var(--Grey, #f4f6fc);
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px; /* 177.778% */
 }
-.pricing main .bn {
-  position: relative;
-  left: 430px;
-  top: -900px;
+.pricing main .cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 64px;
 }
 .pricing main .tas {
   margin-top: -20px;
@@ -1081,10 +1095,16 @@ button {
 .pricing main .bre {
   margin-top: -32px;
 }
+.pricing main .lk {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
 .pricing main .text3 {
-  position: relative;
-  top: -1600px;
-  left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 .pricing main .text3 h1 {
   width: 406px;
@@ -1097,10 +1117,8 @@ button {
   line-height: 64px; /* 133.333% */
 }
 .pricing main .text3 p {
-  position: relative;
-  top: 16px;
   right: 490px;
-  color: var(--Royal-Blue, #2405F2);
+  color: var(--Royal-Blue, #2405f2);
   text-align: center;
   /* Label 01 */
   font-family: Poppins;
@@ -1115,12 +1133,9 @@ button {
   gap: 58px;
   width: 843px;
   height: 162px;
-  position: relative;
-  top: -1750px;
-  left: 700px;
 }
 .pricing main .text5 #lp {
-  color: var(--Royal-Blue, #2405F2);
+  color: var(--Royal-Blue, #2405f2);
   text-align: center;
   /* Heading 6 */
   font-family: Poppins;
@@ -1152,8 +1167,6 @@ button {
   line-height: 32px; /* 177.778% */
 }
 .pricing main .text5 #ml {
-  position: relative;
-  top: 150px;
   width: 843px;
   height: 1px;
   background: rgba(194, 187, 255, 0.7);
@@ -1161,13 +1174,11 @@ button {
 .pricing main .text6 {
   display: flex;
   gap: 54px;
-  position: relative;
-  top: -1750px;
-  left: 700px;
+  margin-top: 32px;
   padding-bottom: 32px;
 }
 .pricing main .text6 #l4 {
-  color: var(--Royal-Blue, #2405F2);
+  color: var(--Royal-Blue, #2405f2);
   text-align: center;
   /* Heading 6 */
   font-family: Poppins;
@@ -1184,26 +1195,6 @@ button {
   font-style: normal;
   font-weight: 500;
   line-height: 36px; /* 150% */
-}
-.pricing main .text6 #xc {
-  position: relative;
-  left: 150px;
-}
-.pricing main .text6 #xm {
-  position: relative;
-  left: 300px;
-}
-.pricing main .text6 #xm1 {
-  position: relative;
-  left: 114px;
-}
-.pricing main .text6 #xm2 {
-  position: relative;
-  left: 153px;
-}
-.pricing .lk {
-  position: relative;
-  top: -150px;
 }
 
 .work {
