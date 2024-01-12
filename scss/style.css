@@ -207,8 +207,11 @@ header .navbar-shrink #navbar-responsive {
   src: url(../../fonts/Poppins-Regular.ttf) !important;
 }
 .blog {
-  font-family: Poppins !important;
+  font-family: Poppins, sans-serif !important;
   padding-top: 95.2px;
+}
+.blog main {
+  padding-top: 100px;
 }
 .blog main .hero .hero-style {
   margin-bottom: 128px;
@@ -258,7 +261,7 @@ header .navbar-shrink #navbar-responsive {
   color: #282938;
   text-align: center;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 64px;
   margin-bottom: 48px;
 }
@@ -308,6 +311,26 @@ header .navbar-shrink #navbar-responsive {
   font-size: 16px;
   font-weight: 500;
   line-height: 28px;
+}
+.blog #backtop {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.2);
+  color: #333;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: -50px;
+  cursor: pointer;
+  z-index: 99;
+  transition: 0.6s;
 }
 
 @media (max-width: 1200px) {
@@ -393,7 +416,7 @@ button {
 
 .home {
   font-family: Poppins, sans-serif !important;
-  padding-top: 95.2px;
+  padding-top: 90px;
 }
 .home main #header {
   background: #1c1e53;
@@ -453,6 +476,9 @@ button {
 }
 .home main #header .header-content .text .buttons button:nth-child(2) span {
   margin-left: 16px;
+}
+.home main #header .header-content img {
+  width: 100%;
 }
 .home main #project .project-content {
   padding: 57px 0 128px;
@@ -698,6 +724,174 @@ button {
   background: #5239fa;
   color: #fff;
 }
+@media (max-width: 1225px) {
+  .home main #prodact .prodact-content .cards .card {
+    height: 400px;
+  }
+  .home main #prodact .prodact-content .cards .card svg {
+    width: 35px;
+  }
+}
+@media (max-width: 1100px) {
+  .home main #header .header-content img {
+    width: 400px;
+  }
+}
+@media (max-width: 1000px) {
+  .home main #prodact .prodact-content .cards {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+  .home main #prodact .prodact-content .cards .card {
+    height: 316px;
+  }
+  .home main #client .client-content {
+    grid-template-columns: 1fr;
+    place-items: start;
+  }
+}
+@media (max-width: 870px) {
+  .home main #header .header-content {
+    flex-direction: column-reverse;
+  }
+  .home main #header .header-content img {
+    width: 600px;
+  }
+  .home main #project .project-content .bottom {
+    grid-template-columns: 1fr;
+  }
+  .home main #project .project-content .bottom .right {
+    gap: 30px;
+  }
+  .home main #project .project-content .bottom .right .top {
+    justify-content: center;
+  }
+  .home main #project .project-content .bottom .right img {
+    display: block;
+    margin: 0 auto;
+    width: 410px;
+  }
+  .home main #project .project-content .bottom .left .left-content {
+    height: 400px;
+  }
+  .home main #prodact .prodact-content .cards .card {
+    padding: 25px;
+  }
+}
+@media (max-width: 650px) {
+  .home main #header .header-content img {
+    width: 400px;
+  }
+  .home main h1 {
+    font-size: 32px !important;
+    line-height: 35px !important;
+  }
+  .home main p {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+  .home main h2 {
+    font-size: 18px !important;
+  }
+  .home main button {
+    font-size: 16px !important;
+  }
+  .home main #prodact .prodact-content .cards {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+  .home main #prodact .prodact-content .cards .card {
+    height: 250px;
+  }
+  .home main #prodact .prodact-content {
+    padding: 70px 0;
+  }
+  .home main #header .header-content {
+    padding: 70px 0;
+  }
+  .home main #header .header-content .text .buttons {
+    flex-direction: column;
+  }
+  .home main #header .header-content .text .buttons button:nth-child(1) {
+    padding: 8px 20px;
+  }
+  .home main #client .client-content {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 450px) {
+  .home main #header .header-content img {
+    width: 250px;
+  }
+  .home main .home main #project .project-content .bottom .left {
+    place-items: center;
+  }
+  .home main #project .project-content .bottom .left .left-content {
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .home main #project .project-content .bottom .left .left-content a {
+    margin-bottom: 0;
+  }
+  .home main #project .project-content .bottom {
+    place-items: center;
+  }
+  .home main h1 {
+    font-size: 26px !important;
+  }
+  .home main .project-content .top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .home main #project .project-content .bottom .right .top .text {
+    width: 250px;
+    height: 230px;
+    justify-content: center;
+  }
+  .home main #project .project-content .bottom .right .top .text a {
+    margin-bottom: 0;
+  }
+  .home main #project .project-content .bottom .right .top {
+    width: 250px;
+    justify-content: center;
+  }
+  .home main #project .project-content .bottom .right {
+    justify-content: center;
+    align-items: center;
+  }
+  .home main #project .project-content .bottom .right img {
+    width: 300px;
+  }
+  .home main #project .project-content {
+    padding-bottom: 0px;
+  }
+  .home main #client .client-content .right .cards .profil img {
+    width: 35px;
+  }
+  .home main #client .client-content .right .cards .profil h4 {
+    font-size: 14px !important;
+  }
+  .home main .carousel a {
+    font-size: 24px !important;
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .home main #header .header-content .text .buttons button:nth-child(1) {
+    padding: 8px 0px;
+    width: 180px;
+  }
+}
+@media (max-width: 340px) {
+  .home main #project .project-content .bottom .left .left-content {
+    width: 250px;
+  }
+  .home main #project .project-content .bottom .right img {
+    width: 250px;
+  }
+}
 .home #backtop {
   text-decoration: none;
   font-size: 24px;
@@ -767,16 +961,16 @@ button {
   height: 800px;
   flex-shrink: 0;
   border-radius: 12px;
-  background: var(--Grey, #F4F6FC);
+  background: var(--Grey, #f4f6fc);
   margin-bottom: 100px;
   transition: 0.5s;
 }
 .pricing main .box:hover {
-  background: var(--Tint-blue, #1C1E53);
+  background: var(--Tint-blue, #1c1e53);
   color: #fff !important;
 }
 .pricing main .box:hover .bt-1:hover {
-  background: var(--Yellow, #FCD980);
+  background: var(--Yellow, #fcd980);
 }
 .pricing main .box .tx1 {
   display: flex;
@@ -805,7 +999,7 @@ button {
   line-height: 28px; /* 175% */
 }
 .pricing main .box .tx1 #p2:hover {
-  color: var(--Yellow, #FCD980);
+  color: var(--Yellow, #fcd980);
 }
 .pricing main .box .tx2 {
   padding-top: 20px;
@@ -866,7 +1060,7 @@ button {
   margin-left: 76px;
 }
 .pricing main .box .bt-1 p {
-  color: var(--Grey, #F4F6FC);
+  color: var(--Grey, #f4f6fc);
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
