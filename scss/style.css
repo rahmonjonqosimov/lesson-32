@@ -248,12 +248,12 @@ header .navbar-shrink #navbar-responsive {
   max-width: 484px;
 }
 .about-us .g {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 61px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
   background: #f4f5f5;
   margin-top: 126px;
+  gap: 20px;
 }
 .about-us .g .s1 h1 {
   color: #282938;
@@ -266,6 +266,28 @@ header .navbar-shrink #navbar-responsive {
   padding-top: 96px;
 }
 .about-us .g .s1 p {
+  color: #282938;
+  max-width: 515px;
+  /* Body 1 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  margin-top: 16px;
+  margin-bottom: 96px;
+}
+.about-us .g .b1 h1 {
+  color: #282938;
+  /* Heading 3 */
+  font-family: Poppins;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 147.368% */
+  padding-top: 96px;
+}
+.about-us .g .b1 p {
   color: #282938;
   max-width: 515px;
   /* Body 1 */
@@ -419,6 +441,26 @@ header .navbar-shrink #navbar-responsive {
   font-weight: 400;
   line-height: 28px; /* 175% */
 }
+.about-us #backtop {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.2);
+  color: #333;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: -50px;
+  cursor: pointer;
+  z-index: 99;
+  transition: 0.6s;
+}
 
 @media (max-width: 1300px) {
   .a2 img {
@@ -432,8 +474,9 @@ header .navbar-shrink #navbar-responsive {
 }
 @media (max-width: 1050px) {
   .a {
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .b {
     flex-wrap: wrap;
@@ -525,6 +568,12 @@ header .navbar-shrink #navbar-responsive {
   }
   .about-us .wave .f1 {
     display: flex;
+  }
+  .about-us .g {
+    grid-template-columns: 1fr;
+  }
+  .about-us .g p {
+    margin-bottom: 30px !important;
   }
 }
 @media (max-width: 505px) {
