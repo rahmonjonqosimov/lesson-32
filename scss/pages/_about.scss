@@ -1,10 +1,11 @@
-.about-page {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.about-us {
   .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -98,6 +99,9 @@
     font-weight: 600;
     line-height: 64px; /* 133.333% */
   }
+  .f1 {
+    display: flex;
+  }
   .d1 {
     display: flex;
     justify-content: center;
@@ -141,8 +145,6 @@
     margin-top: -35px;
   }
   .k4 {
-    width: 296px;
-    height: 344px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -168,6 +170,63 @@
       font-style: normal;
       font-weight: 400;
       line-height: 28px; /* 175% */
+    }
+  }
+  #d5 {
+    background: #f4f6fc;
+    .d5-content {
+      h1 {
+        color: var(--Dark-blue, #282938);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 64px; /* 133.333% */
+        padding-top: 128px;
+        padding-bottom: 48px;
+      }
+      .cards {
+        display: flex;
+        justify-content: center;
+
+        padding-bottom: 128px;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 10px;
+        .card {
+          max-width: 296px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 48px 64px;
+          background: #fff;
+
+          h2 {
+            color: var(--b, #1d2130);
+            text-align: center;
+
+            /* Heading 6 */
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px; /* 150% */
+            margin-top: 30px;
+          }
+          p {
+            color: var(--b, #1d2130);
+
+            /* Body 1 */
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; /* 175% */
+          }
+        }
+      }
     }
   }
 }
@@ -278,7 +337,7 @@
     }
   }
 
-  .about-page {
+  .about-us {
     .wave {
       background: #1c1e53;
 
@@ -291,6 +350,9 @@
         gap: 80px;
         background: #1c1e53;
         flex-shrink: 0;
+      }
+      .f1 {
+        display: flex;
       }
     }
   }
