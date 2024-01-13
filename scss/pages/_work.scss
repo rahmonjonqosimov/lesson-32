@@ -1,6 +1,16 @@
 .work {
   padding-top: 95.2px;
   main {
+    h1 {
+      color: var(--Dark-blue, #282938);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 64px;
+      padding: 4px 0 24px;
+    }
     .portfolio {
       background: var(--Grey, #f4f6fc);
       &-contents {
@@ -20,16 +30,7 @@
           line-height: 28px;
           max-width: 733px;
         }
-        h1 {
-          color: var(--Dark-blue, #282938);
-          text-align: center;
-          font-family: Poppins;
-          font-size: 48px;
-          font-style: normal;
-          font-weight: 600;
-          line-height: 64px;
-          padding: 4px 0 24px;
-        }
+
         .work-svg {
           display: flex;
           align-items: center;
@@ -41,31 +42,223 @@
     .template {
       &-contents {
         display: flex;
+        flex-direction: column;
         .template-items {
           display: flex;
           gap: 32px;
           padding: 96px 0 48px;
+          justify-content: center;
+        }
+        .cards {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 20px;
+          .card {
+            // max-width: 623px;
+            padding-bottom: 64px;
+            img {
+              width: 623px;
+            }
+            h3 {
+              font-family: Poppins;
+              font-size: 38px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 56px;
+              padding: 24px 0 12px;
+            }
+            p {
+              font-family: Poppins;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 28px;
+              opacity: 0.7;
+              max-width: 623px;
+            }
+            .h4-svg {
+              display: flex;
+              align-items: center;
+              gap: 16px;
+              padding-top: 24px;
+              h4 {
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .end {
+      &-contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 730px;
+        margin: 0 auto;
+        padding: 64px 0 128px;
+        p {
+          color: var(--Dark-blue, #282938);
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+          opacity: 0.7;
+          max-width: 562px;
+          padding: 20px 0 40px;
+        }
+        button {
+          padding: 16px 67px;
+          border-radius: 41px;
+          background: #fcd980;
+          color: var(--Dark-blue, #282938);
+          font-family: Poppins;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 32px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  #backtop {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.2);
+    color: #333;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: -50px;
+    cursor: pointer;
+    z-index: 99;
+    transition: 0.6s;
+  }
+}
+// RESPONSIVE////////////////////////////////////////////
+@media (max-width: 1309px) {
+  .work {
+    main {
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        .card {
+          img {
+            width: 400px !important;
+          }
+          p {
+            max-width: 500px !important;
+          }
         }
       }
     }
   }
 }
-// RESPONSIVE////////////////////////////////////////////
-@media (max-width: 976px) {
+@media (max-width: 1067px) {
   .work {
     main {
+      .cards {
+        .card {
+          p {
+            max-width: 400px !important;
+          }
+        }
+      }
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .work {
     main {
+      .cards {
+        justify-content: center !important;
+        .card {
+          img {
+            width: 500px !important;
+          }
+          p {
+            width: 500px !important;
+          }
+        }
+      }
     }
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   .work {
     main {
+      .cards {
+        .card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 300px !important;
+          }
+          p {
+            width: 350px !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .work {
+    main {
+      h1 {
+        font-size: 28px !important;
+      }
+      h3 {
+        font-size: 22px !important;
+      }
+      p {
+        font-size: 14px !important;
+      }
+      h4 {
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+@media (max-width: 385px) {
+  .work {
+    main {
+      .cards {
+        .card {
+          img {
+            width: 250px !important;
+          }
+
+          p {
+            width: 250px !important;
+          }
+        }
+      }
+      .template-items {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 0 40px !important;
+      }
+      .end-contents button {
+        padding: 12px 40px !important;
+      }
     }
   }
 }
