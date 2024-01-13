@@ -53,11 +53,12 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
+          gap: 20px;
           .card {
-            max-width: 623px;
+            // max-width: 623px;
             padding-bottom: 64px;
             img {
-              max-width: 623px;
+              width: 623px;
             }
             h3 {
               font-family: Poppins;
@@ -74,6 +75,7 @@
               font-weight: 400;
               line-height: 28px;
               opacity: 0.7;
+              max-width: 623px;
             }
             .h4-svg {
               display: flex;
@@ -128,29 +130,135 @@
       }
     }
   }
+  #backtop {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.2);
+    color: #333;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: -50px;
+    cursor: pointer;
+    z-index: 99;
+    transition: 0.6s;
+  }
 }
 // RESPONSIVE////////////////////////////////////////////
-@media (max-width: 976px) {
+@media (max-width: 1309px) {
   .work {
     main {
       .cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        .card {
+          img {
+            width: 400px !important;
+          }
+          p {
+            max-width: 500px !important;
+          }
+        }
       }
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1067px) {
   .work {
     main {
+      .cards {
+        .card {
+          p {
+            max-width: 400px !important;
+          }
+        }
+      }
     }
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 860px) {
   .work {
     main {
+      .cards {
+        justify-content: center !important;
+        .card {
+          img {
+            width: 500px !important;
+          }
+          p {
+            width: 500px !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .work {
+    main {
+      .cards {
+        .card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 300px !important;
+          }
+          p {
+            width: 350px !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .work {
+    main {
+      h1 {
+        font-size: 28px !important;
+      }
+      h3 {
+        font-size: 22px !important;
+      }
+      p {
+        font-size: 14px !important;
+      }
+      h4 {
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+@media (max-width: 385px) {
+  .work {
+    main {
+      .cards {
+        .card {
+          img {
+            width: 250px !important;
+          }
+
+          p {
+            width: 250px !important;
+          }
+        }
+      }
+      .template-items {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 0 40px !important;
+      }
+      .end-contents button {
+        padding: 12px 40px !important;
+      }
     }
   }
 }
